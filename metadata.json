@@ -1,0 +1,6 @@
+{
+  "name": "YouTube Kids & Parent Sync",
+  "description": "Paired YouTube clone apps for parents and kids featuring keyword-based feed generation, video search curation, manual video selection, and local video uploading.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

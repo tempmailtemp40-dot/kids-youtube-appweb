@@ -1,0 +1,142 @@
+import { Video } from '../types';
+
+export const INITIAL_KEYWORDS = [
+  { id: 'kw-1', text: 'tom and jerry', enabled: true, addedAt: new Date().toISOString() },
+  { id: 'kw-2', text: 'bugs bunny show', enabled: true, addedAt: new Date().toISOString() },
+  { id: 'kw-3', text: 'peppa pig', enabled: true, addedAt: new Date().toISOString() },
+  { id: 'kw-4', text: 'dinosaur adventures', enabled: true, addedAt: new Date().toISOString() },
+];
+
+export const CATALOG_VIDEOS: Video[] = [
+  // Tom and Jerry
+  {
+    id: 'yt-tj-1',
+    title: 'Tom and Jerry Classic Chase Collection 😼🐭',
+    description: 'Watch the best classic chases between Tom and Jerry! High definition remaster of timeless slapstick cartoon fun for the whole family.',
+    channelTitle: 'WB Kids Official',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+    duration: '11:45',
+    views: '142M views',
+    publishedAt: '2 months ago',
+    tags: ['tom and jerry', 'cartoons', 'cat and mouse', 'wb kids', 'classic'],
+    keywordMatched: 'tom and jerry',
+    ageGroup: '3-10',
+    addedAt: new Date().toISOString(),
+  },
+  {
+    id: 'yt-tj-2',
+    title: 'Tom & Jerry: Mouse Traps & Mischief 🧀',
+    description: 'Jerry outsmarts Tom once again with silly inventions and sneaky hideouts! Non-stop laughs for kids.',
+    channelTitle: 'Classic Toons Central',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1566140967404-b8b3932483f5?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4',
+    duration: '09:20',
+    views: '88M views',
+    publishedAt: '5 months ago',
+    tags: ['tom and jerry', 'slapstick', 'funny', 'cartoons'],
+    keywordMatched: 'tom and jerry',
+    ageGroup: '3-10',
+    addedAt: new Date().toISOString(),
+  },
+
+  // Bugs Bunny Show
+  {
+    id: 'yt-bb-1',
+    title: 'Bugs Bunny: What’s Up, Doc? Ultimate Marathon 🥕',
+    description: 'The iconic Bugs Bunny in his funniest classic adventures featuring Elmer Fudd and Daffy Duck!',
+    channelTitle: 'Looney Tunes Club',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+    duration: '14:10',
+    views: '95M views',
+    publishedAt: '1 year ago',
+    tags: ['bugs bunny show', 'looney tunes', 'carrot', 'cartoons'],
+    keywordMatched: 'bugs bunny show',
+    ageGroup: '4-12',
+    addedAt: new Date().toISOString(),
+  },
+  {
+    id: 'yt-bb-2',
+    title: 'Bugs Bunny & Daffy Duck: Opera Special 🎵🎭',
+    description: 'Bugs Bunny stars in the famous musical opera episode! Laugh along with musical fun and clever tricks.',
+    channelTitle: 'Looney Tunes Club',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1514533450685-4493e01d1fdc?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4',
+    duration: '07:50',
+    views: '41M views',
+    publishedAt: '8 months ago',
+    tags: ['bugs bunny show', 'daffy duck', 'music', 'classic'],
+    keywordMatched: 'bugs bunny show',
+    ageGroup: '4-12',
+    addedAt: new Date().toISOString(),
+  },
+
+  // Peppa Pig
+  {
+    id: 'yt-pp-1',
+    title: 'Peppa Pig - Muddy Puddles & Playground Fun 🐷',
+    description: 'Peppa Pig and George jump in muddy puddles and visit the playground with Mummy Pig and Daddy Pig!',
+    channelTitle: 'Peppa Pig Official Channel',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreet.mp4',
+    duration: '12:00',
+    views: '210M views',
+    publishedAt: '3 weeks ago',
+    tags: ['peppa pig', 'toddler', 'muddy puddles', 'stories'],
+    keywordMatched: 'peppa pig',
+    ageGroup: '2-6',
+    addedAt: new Date().toISOString(),
+  },
+
+  // Dinosaur Adventures
+  {
+    id: 'yt-dino-1',
+    title: 'Dinosaur Kingdom: Meet T-Rex & Triceratops 🦖',
+    description: 'Explore the prehistoric world! Learn fascinating facts about friendly dinosaurs in high quality 3D animation.',
+    channelTitle: 'Dino Discovery Kids',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4',
+    duration: '15:30',
+    views: '34M views',
+    publishedAt: '1 month ago',
+    tags: ['dinosaur adventures', 'educational', 'dinosaurs', 'science'],
+    keywordMatched: 'dinosaur adventures',
+    ageGroup: '4-10',
+    addedAt: new Date().toISOString(),
+  },
+
+  // Cocomelon / Nursery Rhymes
+  {
+    id: 'yt-coco-1',
+    title: 'Wheels on the Bus & Sing-Along Rhymes 🚌🎶',
+    description: 'Sing along to popular kids songs and colorful animations. Perfect for toddlers and young children.',
+    channelTitle: 'Happy Kids Songs',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4',
+    duration: '18:20',
+    views: '520M views',
+    publishedAt: '4 months ago',
+    tags: ['nursery rhymes', 'songs', 'cocomelon', 'toddler'],
+    keywordMatched: 'nursery rhymes',
+    ageGroup: '1-5',
+    addedAt: new Date().toISOString(),
+  },
+
+  // Space & Planets for Kids
+  {
+    id: 'yt-space-1',
+    title: 'Exploring Our Solar System & Stars 🚀🪐',
+    description: 'Take a trip to Mars, Jupiter, and Saturn! Easy science explanation of planets and astronauts for curious minds.',
+    channelTitle: 'Space Kids Academy',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=700&auto=format&fit=crop&q=80',
+    videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4',
+    duration: '10:05',
+    views: '18M views',
+    publishedAt: '2 weeks ago',
+    tags: ['space exploration', 'planets', 'science', 'astronomy'],
+    keywordMatched: 'space exploration',
+    ageGroup: '5-12',
+    addedAt: new Date().toISOString(),
+  }
+];
